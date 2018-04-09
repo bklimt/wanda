@@ -1,4 +1,5 @@
 
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <vector>
@@ -9,6 +10,10 @@
 
 using std::string;
 using std::vector;
+
+#ifndef gflags
+#define gflags google
+#endif
 
 DEFINE_string(input, "input.jpg", "input image");
 DEFINE_string(output, "output.jpg", "output image");
